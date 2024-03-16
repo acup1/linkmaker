@@ -11,7 +11,14 @@ class Ui(QtWidgets.QMainWindow):
         self.setFixedSize(779, 210)
         self.setWindowTitle("LinkMaker")
         
-        self.template=open("template.txt").read()
+        self.template="""[Desktop Entry]
+Name={}
+Exec={}
+Icon={}
+Type=Application
+Categories={};
+Comment={}
+StartupNotify={}"""
 
         shortcut = QShortcut(QKeySequence("Ctrl+Q"), self)
         shortcut.activated.connect(self.quitApp)
