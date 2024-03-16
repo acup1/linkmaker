@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name={}
+Exec={}
+Icon={}
+Type=Application
+Categories={};
+Comment={}
+StartupNotify={}
